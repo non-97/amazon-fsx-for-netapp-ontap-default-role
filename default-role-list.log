@@ -1,0 +1,21 @@
+# default role
+
+::> security login role config show
+                          ----- Password Restrictions -----
+Vserver     RoleName      Size AlphaNum NoReuse ChangeDelay
+----------- ------------- ---- -------- ------- -----------
+FsxId0e64a4f5386f74c87 fsxadmin 12 enabled    6      0 days
+FsxId0e64a4f5386f74c87 fsxadmin-readonly 8 enabled 6 0 days
+svm         vsadmin          8  enabled       6      0 days
+svm         vsadmin-backup   8  enabled       6      0 days
+svm         vsadmin-protocol 8  enabled       6      0 days
+svm         vsadmin-readonly 8  enabled       6      0 days
+svm         vsadmin-snaplock 8  enabled       6      0 days
+svm         vsadmin-volume   8  enabled       6      0 days
+svm2        vsadmin          8  enabled       6      0 days
+svm2        vsadmin-backup   8  enabled       6      0 days
+svm2        vsadmin-protocol 8  enabled       6      0 days
+svm2        vsadmin-readonly 8  enabled       6      0 days
+svm2        vsadmin-snaplock 8  enabled       6      0 days
+svm2        vsadmin-volume   8  enabled       6      0 days
+14 entries were displayed.

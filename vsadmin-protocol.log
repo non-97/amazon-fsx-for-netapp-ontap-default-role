@@ -1,0 +1,63 @@
+# vsadmin-protocol
+
+::> security login role show -vserver svm -role vsadmin-protocol
+           Role          Command/                                      Access
+Vserver    Name          Directory                               Query Level
+---------- ------------- --------- ----------------------------------- --------
+svm        vsadmin-protocol DEFAULT                                    none
+                            df                                         readonly
+                            lun                                        all
+                            network interface                          readonly
+                            network interface failover-groups          none
+                            security certificate                       readonly
+                            security certificate file                  none
+                            security ipsec ca-certificate              all
+                            security ipsec config show                 readonly
+                            security ipsec policy                      all
+                            security ipsec show-ikesa                  readonly
+                            security ipsec show-ipsecsa                readonly
+                            security key-manager external              readonly
+                            security key-manager key query             all
+                            security key-manager keystore              readonly
+                            security key-manager show-key-store        readonly
+                            security key-manager volume-encryption-supported  readonly
+                            security login banner                      all
+                            security login motd                        all
+                            security login password                    all
+                            security login publickey                   all
+                            security login role show-ontapi            all
+                            security login role show-user-capability   all
+                            security login totp                        all
+                            security ssh                               all
+                            security ssl                               all
+                            set                                        all
+                            snapdiff api start                         all
+                            timezone                                   all
+                            version                                    all
+                            volume                                     readonly
+                            volume check                               none
+                            volume efficiency                          none
+                            volume move                                none
+                            vserver                                    readonly
+                            vserver active-directory                   all
+                            vserver audit                              all
+                            vserver cifs                               all
+                            vserver export-policy                      all
+                            vserver fcp                                all
+                            vserver fpolicy                            all
+                            vserver http                               all
+                            vserver http-proxy                         all
+                            vserver iscsi                              all
+                            vserver locks                              all
+                            vserver name-mapping                       all
+                            vserver nfs                                all
+                            vserver nvme                               all
+                            vserver object-store-server                all
+                            vserver security trace filter              all
+                            vserver security trace trace-result        all
+                            vserver services                           all
+                            vserver services name-service unix-group max-limit  none
+                            vserver services name-service unix-user max-limit  none
+                            vserver services web                       none
+                            vserver vscan                              all
+56 entries were displayed.

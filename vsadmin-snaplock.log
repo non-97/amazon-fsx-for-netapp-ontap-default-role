@@ -1,0 +1,59 @@
+# vsadmin-snaplock
+
+::> security login role show -vserver svm -role vsadmin-snaplock
+           Role          Command/                                      Access
+Vserver    Name          Directory                               Query Level
+---------- ------------- --------- ----------------------------------- --------
+svm        vsadmin-snaplock DEFAULT                                    none
+                            df                                         readonly
+                            job                                        all
+                            job schedule                               readonly
+                            job schedule cron                          none
+                            job schedule interval                      none
+                            network interface                          readonly
+                            security certificate                       readonly
+                            security certificate file                  none
+                            security ipsec ca-certificate              all
+                            security ipsec config show                 readonly
+                            security ipsec policy                      all
+                            security ipsec show-ikesa                  readonly
+                            security ipsec show-ipsecsa                readonly
+                            security key-manager external              readonly
+                            security key-manager key query             all
+                            security key-manager keystore              readonly
+                            security key-manager show-key-store        readonly
+                            security key-manager volume-encryption-supported  readonly
+                            security login banner                      all
+                            security login motd                        all
+                            security login password                    all
+                            security login publickey                   all
+                            security login role show-ontapi            all
+                            security login role show-user-capability   all
+                            security login totp                        all
+                            security multi-admin-verify request        all
+                            security multi-admin-verify request approve  none
+                            security multi-admin-verify request veto   none
+                            security ssh                               all
+                            security ssl                               all
+                            set                                        all
+                            snaplock                                   all
+                            timezone                                   all
+                            version                                    all
+                            volume                                     all
+                            vserver                                    readonly
+                            vserver active-directory                   all
+                            vserver audit                              all
+                            vserver cifs                               all
+                            vserver export-policy                      all
+                            vserver fpolicy                            all
+                            vserver http                               all
+                            vserver locks                              all
+                            vserver name-mapping                       all
+                            vserver nfs                                all
+                            vserver security trace filter              all
+                            vserver security trace trace-result        all
+                            vserver services                           all
+                            vserver services name-service unix-group max-limit  none
+                            vserver services name-service unix-user max-limit  none
+                            vserver vscan                              all
+52 entries were displayed.

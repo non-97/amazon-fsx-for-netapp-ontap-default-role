@@ -1,0 +1,111 @@
+# vsadmin
+
+::> security login role show -vserver svm -role vsadmin
+           Role          Command/                                      Access
+Vserver    Name          Directory                               Query Level
+---------- ------------- --------- ----------------------------------- --------
+svm        vsadmin       DEFAULT                                       none
+                         application create                            all
+                         application delete                            all
+                         application hostdata                          all
+                         application metadata                          all
+                         application modify                            all
+                         application show                              readonly
+                         application show-lun                          readonly
+                         application show-statistics                   readonly
+                         application show-template                     readonly
+                         application snapshot                          all
+                         application volume show                       readonly
+                         cluster application-record                    all
+                         df                                            readonly
+                         event generate-autosupport-log                all
+                         job                                           all
+                         job schedule                                  all
+                         job schedule cron                             all
+                         job schedule interval                         all
+                         lun                                           all
+                         network arp                                   all
+                         network connections                           readonly
+                         network connections active show-clients       none
+                         network connections active show-protocols     none
+                         network connections active show-services      none
+                         network interface                             readonly
+                         network interface failover-groups             readonly
+                         network ndp                                   all
+                         network ping                                  all
+                         network ping6                                 all
+                         network port                                  readonly
+                         network route                                 all
+                         network traceroute                            all
+                         network traceroute6                           all
+                         security certificate                          all
+                         security certificate file                     none
+                         security ipsec ca-certificate                 all
+                         security ipsec config show                    readonly
+                         security ipsec policy                         all
+                         security ipsec show-ikesa                     readonly
+                         security ipsec show-ipsecsa                   readonly
+                         security key-manager external                 all
+                         security key-manager key query                all
+                         security key-manager keystore                 all
+                         security key-manager show-key-store           readonly
+                         security key-manager volume-encryption-supported  readonly
+                         security login banner                         all
+                         security login motd                           all
+                         security login password                       all
+                         security login publickey                      all
+                         security login role show-ontapi               all
+                         security login role show-user-capability      all
+                         security login totp                           all
+                         security login whoami                         all
+                         security multi-admin-verify request           all
+                         security multi-admin-verify request approve   none
+                         security multi-admin-verify request veto      none
+                         security ssh                                  all
+                         security ssl                                  all
+                         set                                           all
+                         snapdiff api start                            all
+                         snaplock                                      all
+                         snapmirror                                    all
+                         statistics                                    readonly
+                         statistics catalog                            readonly
+                         statistics samples delete                     all
+                         statistics show-periodic                      readonly
+                         statistics start                              readonly
+                         statistics stop                               readonly
+                         storage-service                               readonly
+                         system node virtual-machine instance show-settings  readonly
+                         system services firewall policy               readonly
+                         timezone                                      all
+                         version                                       all
+                         volume                                        all
+                         volume efficiency                             none
+                         volume move                                   none
+                         vserver                                       readonly
+                         vserver active-directory                      all
+                         vserver audit                                 all
+                         vserver cifs                                  all
+                         vserver export-policy                         all
+                         vserver fcp                                   all
+                         vserver fpolicy                               all
+                         vserver http                                  all
+                         vserver http-proxy                            all
+                         vserver iscsi                                 all
+                         vserver locks                                 all
+                         vserver name-mapping                          all
+                         vserver nfs                                   all
+                         vserver nvme                                  all
+                         vserver object-store-server                   all
+                         vserver security file-directory               all
+                         vserver security trace filter                 all
+                         vserver security trace trace-result           all
+                         vserver services                              all
+                         vserver services name-service unix-group max-limit  none
+                         vserver services name-service unix-user max-limit  none
+                         vserver services ndmp                         all
+                         vserver services ndmp status                  all
+                         vserver services web                          none
+                         vserver smtape                                all
+                         vserver smtape break                          all
+                         vserver vscan                                 all
+104 entries were displayed.

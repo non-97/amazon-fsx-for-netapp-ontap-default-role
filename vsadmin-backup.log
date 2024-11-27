@@ -1,0 +1,54 @@
+# vsadmin-backup
+
+::> security login role show -vserver svm -role vsadmin-backup
+           Role          Command/                                      Access
+Vserver    Name          Directory                               Query Level
+---------- ------------- --------- ----------------------------------- --------
+svm        vsadmin-backup DEFAULT                                      none
+                          df                                           readonly
+                          job                                          all
+                          job schedule                                 readonly
+                          job schedule cron                            none
+                          job schedule interval                        none
+                          network interface                            readonly
+                          security certificate                         readonly
+                          security certificate file                    none
+                          security ipsec ca-certificate                all
+                          security ipsec config show                   readonly
+                          security ipsec policy                        all
+                          security ipsec show-ikesa                    readonly
+                          security ipsec show-ipsecsa                  readonly
+                          security key-manager external                readonly
+                          security key-manager key query               all
+                          security key-manager keystore                readonly
+                          security key-manager show-key-store          readonly
+                          security key-manager volume-encryption-supported  readonly
+                          security login banner                        readonly
+                          security login motd                          readonly
+                          security login password                      all
+                          security login publickey                     all
+                          security login role show-ontapi              all
+                          security login role show-user-capability     all
+                          security login totp                          all
+                          security multi-admin-verify request          all
+                          security multi-admin-verify request approve  none
+                          security multi-admin-verify request veto     none
+                          set                                          all
+                          snapdiff api start                           all
+                          snapmirror                                   all
+                          snapmirror initialize-ls-set                 none
+                          snapmirror update-ls-set                     none
+                          timezone                                     all
+                          version                                      all
+                          volume                                       all
+                          volume clone                                 none
+                          volume efficiency                            none
+                          volume file                                  none
+                          volume flexcache                             none
+                          volume move                                  none
+                          volume qtree                                 none
+                          volume quota                                 none
+                          volume snapshot                              all
+                          vserver peer                                 readonly
+                          vserver services ndmp                        all
+47 entries were displayed.

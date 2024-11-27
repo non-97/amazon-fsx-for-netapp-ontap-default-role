@@ -1,0 +1,17 @@
+::> version
+NetApp Release 9.14.1P7: Thu Aug 01 03:07:44 UTC 2024
+
+::> date show
+  (cluster date show)
+Node      Date                      Time zone
+--------- ------------------------- -------------------------
+FsxId0e64a4f5386f74c87-01
+          11/27/2024 01:35:51       Etc/UTC
+          +00:00
+FsxId0e64a4f5386f74c87-02
+          11/27/2024 01:35:51       Etc/UTC
+          +00:00
+2 entries were displayed.
+
+
+::> set -rows 0

@@ -1,0 +1,327 @@
+# fsxadmin-readonly
+
+::> security login role show -vserver FsxId0e64a4f5386f74c87 -role fsxadmin-readonly
+           Role          Command/                                      Access
+Vserver    Name          Directory                               Query Level
+---------- ------------- --------- ----------------------------------- --------
+FsxId0e64a4f5386f74c87 fsxadmin-readonly DEFAULT                       none
+                                         application                   readonly
+                                         cluster application-record    readonly
+                                         cluster date show             readonly
+                                         cluster ha modify             readonly
+                                         cluster ha show               readonly
+                                         cluster identity modify       readonly
+                                         cluster identity show         readonly
+                                         cluster log-forwarding -port !55555 readonly
+                                         cluster modify                readonly
+                                         cluster peer                  readonly
+                                         cluster show                  readonly
+                                         cluster statistics show       readonly
+                                         cluster time-service ntp server create  readonly
+                                         cluster time-service ntp server delete  readonly
+                                         cluster time-service ntp server modify  readonly
+                                         cluster time-service ntp server show  readonly
+                                         debug network tcpdump -ipspace !Cluster all
+                                         debug san lun                 readonly
+                                         df -vserver !FsxId* -vserver !Cluster readonly
+                                         echo                          all
+                                         event catalog show            readonly
+                                         event config                  readonly
+                                         event filter                  readonly
+                                         event filter copy -access-control-role !fsxadmin -system-defined !true none
+                                         event filter create -access-control-role !fsxadmin -system-defined !true none
+                                         event filter delete -access-control-role !fsxadmin -system-defined !true none
+                                         event filter rename -access-control-role !fsxadmin -system-defined !true none
+                                         event filter show -access-control-role !fsxadmin -system-defined !true none
+                                         event filter show-summary -access-control-role !fsxadmin -system-defined !true none
+                                         event filter update-access-control-role  none
+                                         event log show                readonly
+                                         event notification -access-control-role fsxadmin readonly
+                                         event notification destination -access-control-role fsxadmin readonly
+                                         event notification destination check  all
+                                         event notification history    readonly
+                                         job history -vserver !FsxId* -vserver !Cluster readonly
+                                         job schedule                  readonly
+                                         job schedule show-jobs -owner !- -owner !FsxId* readonly
+                                         job show -vserver !FsxId* -vserver !Cluster readonly
+                                         job show-cluster -vserver !FsxId* -vserver !Cluster readonly
+                                         job show-completed -vserver !FsxId* -vserver !Cluster readonly
+                                         job watch-progress -vserver !FsxId* -vserver !Cluster readonly
+                                         lun                           readonly
+                                         lun import prepare-to-downgrade  none
+                                         metrocluster                  readonly
+                                         network arp                   none
+                                         network cloud routing-table create  readonly
+                                         network cloud routing-table delete  readonly
+                                         network cloud routing-table show  readonly
+                                         network connections -vserver !FsxId* -vserver !Cluster readonly
+                                         network connections options buffer modify  readonly
+                                         network connections options buffer show  readonly
+                                         network fcp adapter modify -node !FsxId* readonly
+                                         network fcp adapter show -node !FsxId* readonly
+                                         network interface create -role data|cluster_mgmt|intercluster readonly
+                                         network interface delete -role data|cluster_mgmt|intercluster readonly
+                                         network interface dns-lb-stats -vserver !FsxId* -vserver !Cluster readonly
+                                         network interface failover-groups create -broadcast-domain Fsx readonly
+                                         network interface failover-groups delete -broadcast-domain Fsx readonly
+                                         network interface failover-groups modify -broadcast-domain Fsx readonly
+                                         network interface failover-groups show -broadcast-domain Fsx readonly
+                                         network interface lif-weights -vserver !FsxId* -vserver !Cluster readonly
+                                         network interface modify -role data|cluster_mgmt|intercluster readonly
+                                         network interface service-policy -vserver !FsxId* -vserver !Cluster readonly
+                                         network interface show -role data|cluster_mgmt|intercluster readonly
+                                         network ipspace create -ipspace !Cluster readonly
+                                         network ipspace delete -ipspace !Cluster readonly
+                                         network ipspace show -ipspace !Cluster readonly
+                                         network ndp neighbor -vserver !FsxId* -vserver !Cluster readonly
+                                         network ping -vserver !Cluster readonly
+                                         network ping6 -vserver !Cluster readonly
+                                         network port broadcast-domain create -broadcast-domain Fsx readonly
+                                         network port broadcast-domain delete -broadcast-domain Fsx readonly
+                                         network port broadcast-domain modify -broadcast-domain Fsx readonly
+                                         network port broadcast-domain show -broadcast-domain Fsx readonly
+                                         network port delete -broadcast-domain Fsx readonly
+                                         network port modify -broadcast-domain Fsx readonly
+                                         network port show -broadcast-domain Fsx readonly
+                                         network route -vserver !FsxId* -vserver !Cluster readonly
+                                         network route cdb             none
+                                         network subnet create -broadcast-domain Fsx readonly
+                                         network subnet modify -broadcast-domain Fsx readonly
+                                         network subnet show -broadcast-domain Fsx readonly
+                                         protection-type show          readonly
+                                         qos                           readonly
+                                         san config modify             readonly
+                                         san config show               readonly
+                                         security anti-ransomware volume -vserver !FsxId* -vserver !Cluster readonly
+                                         security audit                readonly
+                                         security certificate -vserver !FsxId* -vserver !Cluster readonly
+                                         security certificate config modify  readonly
+                                         security certificate config show  readonly
+                                         security certificate create -vserver !FsxId* -vserver !Cluster readonly
+                                         security certificate delete -vserver !FsxId* -vserver !Cluster readonly
+                                         security certificate show -vserver !FsxId* -vserver !Cluster readonly
+                                         security config modify        readonly
+                                         security config ocsp show     readonly
+                                         security config show          readonly
+                                         security ipsec -vserver !FsxId* -vserver !Cluster readonly
+                                         security ipsec config modify  readonly
+                                         security ipsec config show    readonly
+                                         security key-manager external -vserver !FsxId* -vserver !Cluster readonly
+                                         security key-manager key key-table create  readonly
+                                         security key-manager key key-table delete  readonly
+                                         security key-manager key key-table modify  readonly
+                                         security key-manager key key-table show  readonly
+                                         security key-manager key query -vserver !FsxId* -vserver !Cluster readonly
+                                         security key-manager keystore delete -vserver !FsxId* -vserver !Cluster readonly
+                                         security key-manager keystore show -vserver !FsxId* -vserver !Cluster readonly
+                                         security key-manager show-key-store -vserver !FsxId* -vserver !Cluster readonly
+                                         security login -vserver !FsxId* -vserver !Cluster readonly
+                                         security login create -role !readonly -vserver !Cluster readonly
+                                         security login delete -role !readonly -vserver !Cluster readonly
+                                         security login information show -vserver !Cluster readonly
+                                         security login modify -role !readonly -vserver !Cluster readonly
+                                         security login password -username !admin -username !autosupport all
+                                         security login password-prepare-to-downgrade  none
+                                         security login publickey      all
+                                         security login role           readonly
+                                         security login role config modify -vserver FsxId* -role !fsxadmin-readonly none
+                                         security login role config show -vserver FsxId* -role !fsxadmin-readonly none
+                                         security login role create -vserver FsxId* -role !fsxadmin-readonly none
+                                         security login role delete -vserver FsxId* -role !fsxadmin-readonly none
+                                         security login role modify -vserver FsxId* -role !fsxadmin-readonly none
+                                         security login role prepare-to-downgrade  none
+                                         security login role show -vserver FsxId* -role !fsxadmin-readonly none
+                                         security login show -role !readonly -vserver !Cluster readonly
+                                         security login whoami         readonly
+                                         security protocol             readonly
+                                         security session limit create  readonly
+                                         security session limit delete  readonly
+                                         security session limit modify  readonly
+                                         security session limit show   readonly
+                                         security session show -username !admin readonly
+                                         security snmpusers            none
+                                         security ssh modify           readonly
+                                         security ssh show             readonly
+                                         security ssl -vserver !FsxId* -vserver !Cluster readonly
+                                         set                           all
+                                         sleep                         all
+                                         snaplock -vserver !FsxId* -vserver !Cluster readonly
+                                         snaplock compliance-clock     readonly
+                                         snapmirror create             readonly
+                                         snapmirror failover           readonly
+                                         snapmirror list-destinations  readonly
+                                         snapmirror list-unprotected   readonly
+                                         snapmirror mediator           readonly
+                                         snapmirror policy -policy !FSxPolicy* readonly
+                                         snapmirror show               readonly
+                                         snapmirror show-capabilities -endpoint-type !object-store readonly
+                                         snapmirror show-history       readonly
+                                         snapmirror snapshot-owner     readonly
+                                         statistics aggregate          readonly
+                                         statistics catalog -object aggr_efficiency|buf_bufstats|buf_qtype|bufcache|cg*|cifs|client*|cluster_peer|compression|ext_cache*|flexcache*|flexgroup*|fpolicy*|lun*|mount|namespace*|nblade_cifs|nfs*|nvmf*|nwk_ctx|object_store*|qtree*|readahead|resource_headroom_*|smb*|spinhi|system:node|top_client|tsse|volume*|waflremote|witness|workload_volume readonly
+                                         statistics lif                readonly
+                                         statistics lun                readonly
+                                         statistics qtree              readonly
+                                         statistics samples -sample-id !FsxId* readonly
+                                         statistics settings           none
+                                         statistics show -object aggr_efficiency|buf_bufstats|buf_qtype|bufcache|cg*|cifs|client*|cluster_peer|compression|exec_ctx*|ext_cache*|flexcache*|flexgroup*|fpolicy*|lun*|mount|namespace*|nblade_cifs|nfs*|nvmf*|nwk_ctx|object_store*|qtree*|readahead|resource_headroom_*|smb*|spinhi|system:node|top_client|tsse|volume*|waflremote|witness|workload_volume readonly
+                                         statistics show-periodic      readonly
+                                         statistics system show        readonly
+                                         statistics top                readonly
+                                         statistics volume show        readonly
+                                         statistics vserver show -vserver !FsxId* -vserver !Cluster readonly
+                                         statistics-v1                 readonly
+                                         storage aggregate clusterspace show  readonly
+                                         storage aggregate create -aggregate !aggr0* readonly
+                                         storage aggregate modify -aggregate !aggr0* readonly
+                                         storage aggregate object-store config -object-store-name !* readonly
+                                         storage aggregate object-store modify -aggregate !* readonly
+                                         storage aggregate object-store show -aggregate !* readonly
+                                         storage aggregate object-store show-space -aggregate !* readonly
+                                         storage aggregate show -aggregate !aggr0* readonly
+                                         storage aggregate show-cumulated-efficiency -aggregate !aggr0* readonly
+                                         storage aggregate show-efficiency  readonly
+                                         storage aggregate show-space -aggregate !aggr0* readonly
+                                         storage failover modify -node !FsxId* readonly
+                                         storage failover show -node !FsxId* readonly
+                                         storage pool create -nodes !FsxId* readonly
+                                         storage pool show -nodes !FsxId* readonly
+                                         storage shelf show -node !FsxId* readonly
+                                         storage-service               none
+                                         system                        none
+                                         system health alert modify    readonly
+                                         system health alert show      readonly
+                                         system health status show     readonly
+                                         system node autosupport history show  readonly
+                                         system node autosupport modify -node !FsxId* readonly
+                                         system node autosupport show -node !FsxId* readonly
+                                         system node external-cache modify  readonly
+                                         system node external-cache show  readonly
+                                         system node modify            readonly
+                                         system node show              readonly
+                                         system node virtual-machine instance show-settings  readonly
+                                         system ontapi changes         readonly
+                                         system services firewall policy -vserver !FsxId* -vserver !Cluster readonly
+                                         system services firewall policy service  none
+                                         system timeout modify         readonly
+                                         system timeout show           readonly
+                                         timezone                      all
+                                         version                       readonly
+                                         volume activity-tracking -vserver !FsxId* -vserver !Cluster readonly
+                                         volume analytics -vserver !FsxId* -vserver !Cluster readonly
+                                         volume clone -vserver !FsxId* -vserver !Cluster readonly
+                                         volume create -vserver !FsxId* -vserver !Cluster readonly
+                                         volume efficiency inactive-data-compression -vserver !FsxId* -vserver !Cluster readonly
+                                         volume efficiency inactive-data-reallocation -vserver !FsxId* -vserver !Cluster readonly
+                                         volume efficiency modify -vserver !FsxId* -vserver !Cluster readonly
+                                         volume efficiency policy -vserver !FsxId* -vserver !Cluster readonly
+                                         volume efficiency prepare-to-downgrade  none
+                                         volume efficiency revert-to   none
+                                         volume efficiency show -vserver !FsxId* -vserver !Cluster readonly
+                                         volume efficiency stat        readonly
+                                         volume encryption -vserver !FsxId* -vserver !Cluster readonly
+                                         volume encryption modify-enc-blob  none
+                                         volume encryption secure-purge show-version  readonly
+                                         volume file -vserver !FsxId* -vserver !Cluster readonly
+                                         volume file async-delete prepare-for-revert  none
+                                         volume file clone split load modify  readonly
+                                         volume file clone split load show  readonly
+                                         volume file clone token create  readonly
+                                         volume file clone token delete  readonly
+                                         volume file clone token modify  readonly
+                                         volume file clone token show  readonly
+                                         volume file copy show -source-vserver-id !FsxId* -source-vserver-id !Cluster readonly
+                                         volume file fingerprint abort  none
+                                         volume file fingerprint dump  none
+                                         volume file move show -source-vserver-id !FsxId* -source-vserver-id !Cluster readonly
+                                         volume file source            none
+                                         volume flexcache              readonly
+                                         volume flexcache prepare-to-downgrade  none
+                                         volume flexgroup -vserver !FsxId* -vserver !Cluster readonly
+                                         volume flexgroup config modify  readonly
+                                         volume flexgroup config show  readonly
+                                         volume language -vserver !FsxId* -vserver !Cluster readonly
+                                         volume managed-feature        readonly
+                                         volume modify -vserver !FsxId* -vserver !Cluster readonly
+                                         volume move -vserver !FsxId* -vserver !Cluster readonly
+                                         volume move governor          none
+                                         volume move pause             none
+                                         volume move recommend         none
+                                         volume move resume            none
+                                         volume qtree                  readonly
+                                         volume quota                  readonly
+                                         volume reallocation -vserver !FsxId* -vserver !Cluster readonly
+                                         volume rebalance -vserver !FsxId* -vserver !Cluster readonly
+                                         volume recovery-queue -vserver !FsxId* -vserver !Cluster readonly
+                                         volume show -vserver !FsxId* -vserver !Cluster readonly
+                                         volume show-footprint -vserver !FsxId* -vserver !Cluster readonly
+                                         volume show-space -vserver !FsxId* -vserver !Cluster readonly
+                                         volume snaplock -vserver !FsxId* -vserver !Cluster readonly
+                                         volume snaplock prepare-to-downgrade  none
+                                         volume snapshot -vserver !FsxId* -vserver !Cluster readonly
+                                         volume snapshot event-config modify  readonly
+                                         volume snapshot event-config show  readonly
+                                         volume snapshot policy        readonly
+                                         volume snapshot prepare-for-revert  none
+                                         volume snapshot snapdb size   none
+                                         vserver active-directory -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver add-aggregates        none
+                                         vserver audit -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver audit prepare-to-downgrade  none
+                                         vserver check -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver cifs -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver cifs branchcache log  readonly
+                                         vserver cifs cache show-count  readonly
+                                         vserver cifs prepare-to-downgrade  none
+                                         vserver cifs security-encryption-required-dc-connections-prepare-to-downgrade  none
+                                         vserver cifs stat             readonly
+                                         vserver config                none
+                                         vserver consistency-group -vserver !FsxId* readonly
+                                         vserver copy-offload          readonly
+                                         vserver create -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver export-policy -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver fcp                   readonly
+                                         vserver fpolicy -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver http prepare-to-downgrade  none
+                                         vserver http-proxy -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver iscsi -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver iscsi security prepare-to-downgrade  none
+                                         vserver locks -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver locks show-mirrored-open-count  readonly
+                                         vserver modify -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver name-mapping -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver nfs -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver nfs client            readonly
+                                         vserver nfs credentials count  all
+                                         vserver nfs prepare-for-v3-ms-dos-client-downgrade  none
+                                         vserver nfs prepare-to-downgrade  none
+                                         vserver nfs storepool         readonly
+                                         vserver nvme                  readonly
+                                         vserver object-store-server -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver options -option-name replication.throttle.incoming.max_kbs|replication.throttle.outgoing.max_kbs readonly
+                                         vserver peer -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver prepare-for-revert    none
+                                         vserver remove-aggregates     none
+                                         vserver rename                none
+                                         vserver san                   none
+                                         vserver security -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver services -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver services access-check server-discovery show-host  all
+                                         vserver services name-service cache settings modify  readonly
+                                         vserver services name-service cache settings show  readonly
+                                         vserver services name-service cache show-count  readonly
+                                         vserver services name-service ldap client schema delete  readonly
+                                         vserver services name-service ldap client schema modify  readonly
+                                         vserver services name-service ldap client schema show  readonly
+                                         vserver services name-service unix-group max-limit  readonly
+                                         vserver services name-service unix-user max-limit  readonly
+                                         vserver services name-service ypbind status  all
+                                         vserver services ndmp         readonly
+                                         vserver services web access -role !admin -role !none -role !readonly readonly
+                                         vserver show -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver show-aggregates -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver show-protocols -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver snapdiff-rpc-server -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver storage-limit -vserver !FsxId* -vserver !Cluster readonly
+                                         vserver vscan -vserver !FsxId* -vserver !Cluster readonly
+320 entries were displayed.

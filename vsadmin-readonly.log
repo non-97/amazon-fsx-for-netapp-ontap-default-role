@@ -1,0 +1,105 @@
+# vsadmin-readonly
+
+::> security login role show -vserver svm -role vsadmin-readonly
+           Role          Command/                                      Access
+Vserver    Name          Directory                               Query Level
+---------- ------------- --------- ----------------------------------- --------
+svm        vsadmin-readonly DEFAULT                                    none
+                            application hostdata show                  readonly
+                            application metadata show                  readonly
+                            application show                           readonly
+                            application show-lun                       readonly
+                            application show-statistics                readonly
+                            application show-template                  readonly
+                            application snapshot show                  readonly
+                            application volume show                    readonly
+                            cluster application-record show            readonly
+                            df                                         readonly
+                            job show                                   readonly
+                            lun                                        readonly
+                            network arp show                           readonly
+                            network connections                        readonly
+                            network connections active show-clients    none
+                            network connections active show-protocols  none
+                            network connections active show-services   none
+                            network interface                          readonly
+                            network interface failover-groups          none
+                            network ndp neighbor show                  readonly
+                            network ping                               all
+                            network ping6                              all
+                            network port                               readonly
+                            network route active-entry show            readonly
+                            network route show                         readonly
+                            network route show-lifs                    readonly
+                            network traceroute                         all
+                            network traceroute6                        all
+                            security certificate                       readonly
+                            security certificate file                  none
+                            security ipsec ca-certificate              all
+                            security ipsec config show                 readonly
+                            security ipsec policy                      all
+                            security ipsec show-ikesa                  readonly
+                            security ipsec show-ipsecsa                readonly
+                            security key-manager external              readonly
+                            security key-manager key query             all
+                            security key-manager keystore              readonly
+                            security key-manager show-key-store        readonly
+                            security key-manager volume-encryption-supported  readonly
+                            security login banner                      readonly
+                            security login motd                        readonly
+                            security login password                    all
+                            security login publickey                   all
+                            security login role show-ontapi            all
+                            security login role show-user-capability   all
+                            security login totp                        all
+                            security login whoami                      readonly
+                            security ssh                               readonly
+                            security ssl                               readonly
+                            set                                        all
+                            snapdiff api status                        readonly
+                            snapmirror                                 readonly
+                            statistics                                 readonly
+                            statistics cache                           none
+                            statistics catalog                         readonly
+                            statistics lif                             none
+                            statistics lun                             none
+                            statistics samples                         none
+                            statistics show-periodic                   none
+                            statistics start                           none
+                            statistics stop                            none
+                            statistics volume                          none
+                            storage-service                            readonly
+                            system node virtual-machine instance show-settings  readonly
+                            system services firewall policy            readonly
+                            timezone                                   all
+                            version                                    all
+                            volume                                     readonly
+                            volume check                               none
+                            volume efficiency                          none
+                            volume move                                none
+                            vserver                                    readonly
+                            vserver audit                              readonly
+                            vserver cifs                               readonly
+                            vserver cifs users-and-groups import       none
+                            vserver export-policy                      readonly
+                            vserver export-policy config-checker       none
+                            vserver fcp                                readonly
+                            vserver fpolicy                            readonly
+                            vserver http-proxy                         readonly
+                            vserver iscsi                              readonly
+                            vserver locks                              readonly
+                            vserver name-mapping                       readonly
+                            vserver nfs                                readonly
+                            vserver nvme                               readonly
+                            vserver object-store-server                readonly
+                            vserver security file-directory            readonly
+                            vserver security trace filter              readonly
+                            vserver security trace trace-result        readonly
+                            vserver services                           readonly
+                            vserver services name-service unix-group max-limit  none
+                            vserver services name-service unix-user max-limit  none
+                            vserver services ndmp                      readonly
+                            vserver services ndmp status               readonly
+                            vserver services web                       none
+                            vserver vscan                              readonly
+98 entries were displayed.
